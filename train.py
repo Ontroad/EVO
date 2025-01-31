@@ -29,20 +29,6 @@ if __name__ == '__main__':
         help='number of paralleled progress for calculations.',
     )
     parser.add_argument(
-        '--total-steps',
-        type=int,
-        default=10000000,
-        metavar='STEPS',
-        help='total number of steps to train for algorithm',
-    )
-    parser.add_argument(
-        '--steps-per-epoch',
-        type=int,
-        default=20000,
-        metavar='STEP',
-        help='number of steps to update the policy',
-    )
-    parser.add_argument(
         '--device',
         type=str,
         default='cuda:0',
